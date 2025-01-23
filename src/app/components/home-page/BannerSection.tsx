@@ -12,7 +12,7 @@ export default function BannerSection({ title, data }: IBannerSectionProps) {
         </Link>
       </div>
       <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
-        {data.map((items: IBannerData, index: number) => (
+        {data.map((items: IBanner, index: number) => (
           <Link href={items.link} key={index}>
             <img
               src={items.img}

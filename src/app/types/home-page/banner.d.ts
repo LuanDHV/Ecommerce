@@ -1,9 +1,9 @@
-interface IBannerData {
+interface IBanner {
   img: string;
   link: string;
 }
 
 interface IBannerSectionProps {
   title: string;
-  data: IBannerData[];
+  data: IBanner[];
 }

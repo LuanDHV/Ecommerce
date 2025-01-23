@@ -1,4 +1,4 @@
-interface ICategoryData {
+interface ICategory {
   name: string;
   img: string;
   link: string;
@@ -7,5 +7,5 @@ interface ICategoryData {
 
 interface ICategorySectionProps {
   title: string;
-  data: ICategoryData[];
+  data: ICategory[];
 }

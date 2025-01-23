@@ -18,8 +18,8 @@ export default function CategorySection({
         </Link>
       </div>
 
-      <div className="grid grid-cols-5 gap-3 md:grid-cols-7 lg:grid-cols-9">
-        {data.map((item: ICategoryData, index: number) => (
+      <div className="grid grid-cols-4 gap-3 md:grid-cols-6 lg:grid-cols-8">
+        {data.map((item: ICategory, index: number) => (
           <Link
             href={item.link}
             key={index}
@@ -29,7 +29,7 @@ export default function CategorySection({
               backgroundImage: `url(${item.img})`,
             }}
           >
-            <p className="mt-[5px] px-[5px] text-sm font-bold text-white">
+            <p className="mt-[5px] flex flex-shrink-0 px-[5px] text-sm font-bold text-white">
               {item.name}
             </p>
           </Link>

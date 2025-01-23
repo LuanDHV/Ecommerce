@@ -1,4 +1,4 @@
-interface ICategory {
+interface ICategoryProduct {
   name: string;
   link: string;
 }
@@ -19,5 +19,5 @@ interface IProduct {
 interface IProductSectionProps {
   title: string;
   products: IProduct[];
-  category: ICategory[];
+  category: ICategoryProduct[];
 }

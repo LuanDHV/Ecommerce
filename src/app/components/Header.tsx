@@ -1,5 +1,7 @@
 import Link from "next/link";
-const headerMobileItems = [
+import { IMobileItems } from "../types/home-page/header";
+
+const headerMobileItems: IMobileItems[] = [
   {
     src: "/imgs/header/home-icon-gray.svg",
     alt: "Home Icon",
@@ -42,7 +44,7 @@ export default function Header() {
             href="#"
             className="flex w-full items-center justify-center text-xs font-bold text-red-500 lg:text-base xl:w-4/6"
           >
-            Trao Tết 'ANt' Deal Ngập Tràn - Chọn Quà Ngay!
+            Trao Tết &#39;ANt&#39; Deal Ngập Tràn - Chọn Quà Ngay!
           </Link>
         </div>
 
@@ -167,8 +169,8 @@ export default function Header() {
                   0
                 </span>
               </div>
-              <div className="flex items-center text-xs text-white">
-                <p className="text-start">
+              <div className="flex items-center justify-center text-xs text-white">
+                <p className="text-center md:text-start">
                   Giỏ <br className="hidden md:block" /> hàng
                 </p>
               </div>
@@ -188,7 +190,7 @@ export default function Header() {
       </section>
 
       {/* Header Mobile */}
-      <section className="fixed bottom-0 h-[72px] w-full border-t bg-white md:hidden">
+      <section className="fixed bottom-0 z-50 h-[72px] w-full border-t bg-white md:hidden">
         <div className="grid grid-cols-5">
           {headerMobileItems.map((item, index) => (
             <Link

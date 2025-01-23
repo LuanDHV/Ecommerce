@@ -5,18 +5,18 @@ import Footer from "./components/Footer";
 import News from "./components/home-page/News";
 import ProductSection from "./components/home-page/ProductSection";
 import Menu from "./components/home-page/Menu";
+import BannerSale from "./components/home-page/BannerSale";
+import ProductSale from "./components/home-page/ProductSale";
 
-const dataCategoryPhone = [
+const dataCategoryPhone: ICategoryProduct[] = [
   { name: "Apple", link: "#" },
   { name: "Apple", link: "#" },
   { name: "Apple", link: "#" },
   { name: "Apple", link: "#" },
   { name: "Apple", link: "#" },
-  { name: "Apple", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductPhone = [
+const dataProductPhone: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno13-f-chinh-hang-hinh-2.png",
     name: "OPPO Reno13 F 8GB 256GB",
@@ -145,164 +145,160 @@ const dataProductPhone = [
     sStudentPrice: "200.000đ",
     couponPrice:
       "Trả góp 0% lãi suất, không trả trước, không phụ phí qua Shinhan Finance",
-    link: "#",
-  },
-];
-
-const dataCategoryLaptop = [
-  { name: "Asus", link: "#" },
-  { name: "Asus", link: "#" },
-  { name: "Asus", link: "#" },
-  { name: "Asus", link: "#" },
-  { name: "Asus", link: "#" },
-  { name: "Asus", link: "#" },
-  { name: "Xem tất cả", link: "#" },
-];
-
-const dataProductLaptop = [
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
-    link: "#",
-  },
-  {
-    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
-    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
-    price: "13.990.000đ",
-    discountPrice: "14.990.000đ",
-    sMember: "Smember giảm thêm đến",
-    sMemberPrice: "140.000đ",
-    sStudent: "S-Student giảm thêm đến",
-    sStudentPrice: "400.000đ",
-    couponPrice:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
     link: "#",
   },
 ];
 
-const dataCategoryMonitorAndPc = [
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Máy tính bàn", link: "#" },
-  { name: "Xem tất cả", link: "#" },
+const dataCategoryLaptop: ICategoryProduct[] = [
+  { name: "Asus", link: "#" },
+  { name: "Asus", link: "#" },
+  { name: "Asus", link: "#" },
+  { name: "Asus", link: "#" },
+  { name: "Asus", link: "#" },
 ];
 
-const dataProductMonitorAndPc = [
+const dataProductLaptop: IProduct[] = [
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+  {
+    img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.png",
+    name: "Laptop ASUS Vivobook 15 X1504ZA-NJ517W",
+    price: "13.990.000đ",
+    discountPrice: "14.990.000đ",
+    sMember: "Smember giảm thêm đến",
+    sMemberPrice: "140.000đ",
+    sStudent: "S-Student giảm thêm đến",
+    sStudentPrice: "400.000đ",
+    couponPrice:
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+    link: "#",
+  },
+];
+
+const dataCategoryMonitorAndPc: ICategoryProduct[] = [
+  { name: "Máy tính bàn", link: "#" },
+  { name: "Máy tính bàn", link: "#" },
+  { name: "Máy tính bàn", link: "#" },
+  { name: "Máy tính bàn", link: "#" },
+  { name: "Máy tính bàn", link: "#" },
+];
+
+const dataProductMonitorAndPc: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/man-hinh-gaming-asus-tuf-vg249q3a-24-inch.png",
     name: "Màn hình Gaming ASUS TUF VG249Q3A 24 inch",
@@ -365,17 +361,15 @@ const dataProductMonitorAndPc = [
   },
 ];
 
-const dataCategoryIpad = [
+const dataCategoryIpad: ICategoryProduct[] = [
   { name: "Tab S10 Series", link: "#" },
   { name: "Tab S10 Series", link: "#" },
   { name: "Tab S10 Series", link: "#" },
   { name: "Tab S10 Series", link: "#" },
   { name: "Tab S10 Series", link: "#" },
-  { name: "Tab S10 Series", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductIpad = [
+const dataProductIpad: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-air-6-m2-11-inch_9_.jpg",
     name: "iPad Air 6 M2 11 inch Wifi 128GB | Chính hãng Apple Việt Nam",
@@ -443,17 +437,15 @@ const dataProductIpad = [
   },
 ];
 
-const dataCategorySound = [
+const dataCategorySound: ICategoryProduct[] = [
   { name: "Tai nghe Bluetooth", link: "#" },
   { name: "Tai nghe Bluetooth", link: "#" },
   { name: "Tai nghe Bluetooth", link: "#" },
   { name: "Tai nghe Bluetooth", link: "#" },
   { name: "Tai nghe Bluetooth", link: "#" },
-  { name: "Tai nghe Bluetooth", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductSound = [
+const dataProductSound: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-airpods-4-thumb.png",
     name: "Tai nghe Bluetooth Apple AirPods 4",
@@ -521,17 +513,15 @@ const dataProductSound = [
   },
 ];
 
-const dataCategoryWatch = [
+const dataCategoryWatch: ICategoryProduct[] = [
   { name: "Apple Watch", link: "#" },
   { name: "Apple Watch", link: "#" },
   { name: "Apple Watch", link: "#" },
   { name: "Apple Watch", link: "#" },
   { name: "Apple Watch", link: "#" },
-  { name: "Apple Watch", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductWatch = [
+const dataProductWatch: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_band_1__1.png",
     name: "Đồng hồ thông minh Huawei Watch GT 5",
@@ -599,17 +589,15 @@ const dataProductWatch = [
   },
 ];
 
-const dataCategoryHHA = [
+const dataCategoryHHA: ICategoryProduct[] = [
   { name: "Nồi chiên không dầu", link: "#" },
   { name: "Nồi chiên không dầu", link: "#" },
   { name: "Nồi chiên không dầu", link: "#" },
   { name: "Nồi chiên không dầu", link: "#" },
   { name: "Nồi chiên không dầu", link: "#" },
-  { name: "Nồi chiên không dầu", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductHHA = [
+const dataProductHHA: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-massage-the-thao-mini-philips-ppm7501-1.png",
     name: "Máy massage thể thao mini Philips PPM7501",
@@ -677,17 +665,15 @@ const dataProductHHA = [
   },
 ];
 
-const dataCategoryTV = [
+const dataCategoryTV: ICategoryProduct[] = [
   { name: "LG", link: "#" },
   { name: "LG", link: "#" },
   { name: "LG", link: "#" },
   { name: "LG", link: "#" },
   { name: "LG", link: "#" },
-  { name: "LG", link: "#" },
-  { name: "Xem tất cả", link: "#" },
 ];
 
-const dataProductTV = [
+const dataProductTV: IProduct[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_75_inch_75qned86sra.png",
     name: "Tivi Xiaomi A Pro 4K 43 inch QLED 2025",
@@ -755,7 +741,7 @@ const dataProductTV = [
   },
 ];
 
-const dataAccessory = [
+const dataAccessory: ICategory[] = [
   {
     name: "Phụ kiện Apple",
     img: "https://cellphones.com.vn/media/catalog/product/i/c/icon-cate-pk_1_.png",
@@ -854,7 +840,7 @@ const dataAccessory = [
   },
 ];
 
-const dataComputer = [
+const dataComputer: ICategory[] = [
   {
     name: "PC ráp sẵn CellphoneS",
     img: "https://cellphones.com.vn/media/icons/category/cate-868.svg",
@@ -911,7 +897,7 @@ const dataComputer = [
   },
 ];
 
-const dataOld = [
+const dataOld: ICategory[] = [
   {
     name: "Điện thoại cũ",
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:150:0/q:70/plain/https://cellphones.com.vn/media/catalog/product/i/p/ip-14-hp-cu.png",
@@ -992,7 +978,7 @@ const dataOld = [
   },
 ];
 
-const dataStudent = [
+const dataStudent: IBanner[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/RightBanner-udsv-thang-10.png",
     link: "#",
@@ -1011,7 +997,7 @@ const dataStudent = [
   },
 ];
 
-const dataPayment = [
+const dataPayment: IBanner[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/uu-dai-doi-tac-home-11-2024.png",
     link: "#",
@@ -1030,7 +1016,7 @@ const dataPayment = [
   },
 ];
 
-const dataBrand = [
+const dataBrand: IBanner[] = [
   {
     img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/apple-chinh-hang-home.jpg",
     link: "#",
@@ -1056,19 +1042,8 @@ export default function Home() {
       <div className="flex h-auto justify-center bg-white bg-cover bg-center py-28 lg:bg-[url('/imgs/home-page/background.png')] lg:pb-5">
         <div className="w-full bg-white px-[15px] py-[10px] xl:w-4/6">
           <Menu />
-          <div className="mb-[10px] mt-5">
-            <img
-              src="/imgs/home-page/special-desktop.gif"
-              alt="Special Desk"
-              className="hidden w-full object-contain lg:block"
-            />
-            <img
-              src="/imgs/home-page/special-mobile.gif"
-              alt="Special Desk"
-              className="w-full object-contain lg:hidden"
-            />
-          </div>
-
+          <BannerSale />
+          <ProductSale />
           <ProductSection
             title="Điện thoại nổi bật"
             products={dataProductPhone}
